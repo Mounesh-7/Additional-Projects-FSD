@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="climate.css">
+</head>
+<body>
+    <h1>Weather App</h1>
+    <div class="location">
+        <input type="text" id="locationInput" placeholder="Enter location">
+        <button onclick="submitBtn()">Search</button>
+    </div>
+    <div class="weather">
+        <h2 id="location"></h2>
+        <h3 id="temperature"></h3>
+        <p id="conditions"></p>
+    </div>
+    
+   
+    <script>
+    function submitBtn(){
+        var locationInput =  document.getElementById("locationInput").value;
+        var location =  document.getElementById("location");
+        var temperature =  document.getElementById("temperature");
+        var conditions =  document.getElementById("conditions");
+        location.innerHTML = locationInput
+
+    };
+   
+    
+
+    </script>
+</body>
+</html>
